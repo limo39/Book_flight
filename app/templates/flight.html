@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Flight Information</h1>
+  <p>Flight number: {{ flight.number }}</p>
+  <p>Origin: {{ flight.origin }}</p>
+  <p>Destination: {{ flight.destination }}</p>
+  <p>Departure time: {{ flight.departure_time }}</p>
+  <p>Arrival time: {{ flight.arrival_time }}</p>
+{% endblock %}
