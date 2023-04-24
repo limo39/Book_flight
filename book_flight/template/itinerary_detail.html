@@ -1,0 +1,8 @@
+<h2>{{ itinerary.name }}</h2>
+<p>{{ itinerary.description }}</p>
+<h3>Flights:</h3>
+% for flight in itinerary.flights.all %
+    <p>{{ flight }}</p>
+% empty %
+    <p>No flights in itinerary.</p>
+{% endfor %}

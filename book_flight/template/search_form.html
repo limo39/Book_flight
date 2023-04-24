@@ -1,0 +1,12 @@
+<!-- search_form.html -->
+
+<form method ="POST" action="{% url 'search_flights' %}">
+    % csrf_token %
+    <label for="origin">Origin:</label>
+    <input type="text" name="origin"><br><br>
+    <label for="destination">Destination:</label>
+    <input type="text" name="destination"><br><br>
+    <label for="departure_date">Departure Date:</label>
+    <input type="date" name="departure_date"><br><br>
+    <input type="submit" value="Search">
+</form>

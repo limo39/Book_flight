@@ -1,0 +1,12 @@
+<!-- search_results.html -->
+
+% if flights %
+    <h2>Search Results:</h2>
+    <ul>
+    % for flight in flights %
+        <li>{{ flight.flight_number }} - {{ flight.origin }} to {{ flight.destination }} - {{ flight.departure_date }}</li>
+    % endfor %
+    </ul>
+% else %
+    <h2>No Results Found</h2>
+{% endif %}
